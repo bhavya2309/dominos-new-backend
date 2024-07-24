@@ -2,6 +2,8 @@ import express from "express";
 const app = express();
 const PORT=process.env.PORT||1234;
 import dotenv from "dotenv";
+import cors from "cors";
+app.use(cors());
 
 dotenv.config();
 app.listen(PORT, (err) => {
